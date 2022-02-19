@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/12/2022 11:23:19 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-85SRTNKM"
+  DTS:CreatorName="LAPTOP-85SRTNKM\molly"
+  DTS:DTSID="{32A0314A-4F64-4EC3-A265-B8E8DDB72CE1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="EC_BA380_W3_mg"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{BF7F5626-B9BA-44D6-B587-2E6F8B70E264}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6157BED8-F792-40DD-8671-A2381B08E718}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\molly\OneDrive\Documents\Ensign - Winter 2022\BA 280\EC_BA380_DA_mg\csv_files\ZipLatLong.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Zip"
+              DTS:DTSID="{7E9FE2E4-427A-4D43-9AA7-2B57E9A650D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{A68DCC6A-4B4D-4330-9A4B-8E74A318DB63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{EFAF0F84-5377-4ED9-8CF9-F9DD83580F82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{5295F881-9025-4B40-AD3C-83E788D4836F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{A743BF73-ABF5-4B2F-BE48-1668B6334ADD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="timezone"
+              DTS:DTSID="{16D3AF2B-B6B1-466E-9316-01B9EA096FD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dst"
+              DTS:DTSID="{3B840A19-F334-4D23-B858-7930BCCA4329}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{705689D2-17B8-44C3-8A40-220CC1C1E6A6}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\molly\OneDrive\Documents\Ensign - Winter 2022\BA 280\EC_BA380_DATA_mg\csv_files\avocado-prices\avocado.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{747928A4-43BE-4FE7-8AC0-157068F10F84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{1980352B-D872-4B74-8681-64B500CE62E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AveragePrice"
+              DTS:DTSID="{D53BE73D-A5CE-4DA0-BBEE-F845E81BED3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Volume"
+              DTS:DTSID="{90FBDCF4-A987-44E4-8CCA-1B1DC7B52F27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="4046"
+              DTS:DTSID="{FC8729AB-BE1A-46A9-AB57-3F3042B43496}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="4225"
+              DTS:DTSID="{003E0AD1-6F92-49A7-9D79-2990DE43E8B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="4770"
+              DTS:DTSID="{8A4D4833-5EB7-40CB-BE09-AB9BFAB876D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Bags"
+              DTS:DTSID="{81F3B354-6D17-44F8-9DB3-6F254A9DAEE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Small Bags"
+              DTS:DTSID="{D7749BF1-5A5A-4F71-AB59-8889F5BE9504}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Large Bags"
+              DTS:DTSID="{5967E069-0AEF-482B-B862-1EFB8A6C56C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="XLarge Bags"
+              DTS:DTSID="{F1222E08-CD86-4A35-9E77-B5C8BF147E2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="type"
+              DTS:DTSID="{BE5F11CB-FC92-4190-88FC-880AC2DD28AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="year"
+              DTS:DTSID="{10E7D5D7-C523-4C1C-8AE3-3ED66090A467}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region"
+              DTS:DTSID="{330957D7-71DA-438F-BC84-E946EA094DCB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-85SRTNKM\MSSQLSERVER01.EC_BA380_DA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{56ABC2C6-99AA-4920-AA43-FBB2B46DD394}"
+      DTS:ObjectName="LAPTOP-85SRTNKM\MSSQLSERVER01.EC_BA380_DA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-85SRTNKM\MSSQLSERVER01;Initial Catalog=EC_BA380_DA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Avocado Data Analysis"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{110E2127-9887-4035-9291-9F9D13158419}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Avocado Data Analysis">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Avocado Data Analysis\Data Profiling Task"
+          DTS:CreationName="Microsoft.DataProfilingTask"
+          DTS:Description="Data Profiling Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{B34F5679-8AA8-417A-A6F3-7F50BBC01EC2}"
+          DTS:ExecutableType="Microsoft.DataProfilingTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Profiling Task"
+          DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <DataProfilingTaskData>
+              <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests />
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+            </DataProfilingTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Avocado Data Analysis\Load target"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{E781400F-5756-4F56-B2DB-53060C70D20D}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load target"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Avocado Data Analysis\Load target\avocado_csv"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="avocado_csv"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Avocado Data Analysis\Load target\avocado_csv.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Column 0]"
+                          name="Column 0"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Date]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Date]"
+                          name="Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[AveragePrice]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[AveragePrice]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[AveragePrice]"
+                          name="AveragePrice"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Volume]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Total Volume]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Volume]"
+                          name="Total Volume"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4046]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4046]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4046]"
+                          name="4046"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4225]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4225]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4225]"
+                          name="4225"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4770]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4770]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4770]"
+                          name="4770"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Total Bags]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Bags]"
+                          name="Total Bags"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Small Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Small Bags]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Small Bags]"
+                          name="Small Bags"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Large Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Large Bags]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Large Bags]"
+                          name="Large Bags"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[XLarge Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[XLarge Bags]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[XLarge Bags]"
+                          name="XLarge Bags"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[type]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[type]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[type]"
+                          name="type"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[year]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[year]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[year]"
+                          name="year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[region]"
+                          length="50"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[region]"
+                          name="region"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Date" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[AveragePrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AveragePrice" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Total Volume]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Total Volume" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4046]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4046" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4225]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4225" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[4770]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4770" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Total Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Total Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Small Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Small Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[Large Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Large Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[XLarge Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="XLarge Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="type" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[year]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="year" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].ExternalColumns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="region" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Avocado Data Analysis\Load target\dbo_avocado"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="dbo_avocado"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo_avocado]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LAPTOP-85SRTNKM\MSSQLSERVER01.EC_BA380_DA]"
+                      connectionManagerRefId="Package.ConnectionManagers[LAPTOP-85SRTNKM\MSSQLSERVER01.EC_BA380_DA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Column 0]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Column 0"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Column 0]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Column 0]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Date]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Date"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Date]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[AveragePrice]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AveragePrice"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[AveragePrice]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[AveragePrice]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Total Volume]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Total Volume"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Total Volume]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Volume]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[4046]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="4046"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4046]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4046]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[4225]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="4225"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4225]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4225]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[4770]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="4770"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4770]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[4770]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Total Bags]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Total Bags"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Total Bags]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Total Bags]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Small Bags]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Small Bags"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Small Bags]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Small Bags]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[Large Bags]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Large Bags"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Large Bags]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[Large Bags]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[XLarge Bags]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="XLarge Bags"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[XLarge Bags]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[XLarge Bags]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[type]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="type"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[type]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[type]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[year]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="year"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[year]" />
+                        <inputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].Columns[region]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="region"
+                          externalMetadataColumnId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                          lineageId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output].Columns[region]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Date" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[AveragePrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AveragePrice" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Total Volume]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Total Volume" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4046]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4046" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4225]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4225" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[4770]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="4770" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Total Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Total Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Small Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Small Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[Large Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Large Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[XLarge Bags]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="XLarge Bags" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="type" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="year" />
+                        <externalMetadataColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="region" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Avocado Data Analysis\Load target\dbo_avocado.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Avocado Data Analysis\Load target\dbo_avocado.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Avocado Data Analysis\Load target\dbo_avocado.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Avocado Data Analysis\Load target.Paths[Flat File Source Output]"
+                  endId="Package\Avocado Data Analysis\Load target\dbo_avocado.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Avocado Data Analysis\Load target\avocado_csv.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Avocado Data Analysis\Truncate target"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{B4DF7D8C-E7CA-4FA3-B90C-F9D1B4D82F8E}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate target"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{56ABC2C6-99AA-4920-AA43-FBB2B46DD394}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.avocado;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Avocado Data Analysis.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{1362C580-A9D6-465B-B599-18963D0ED219}"
+          DTS:From="Package\Avocado Data Analysis\Truncate target"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Avocado Data Analysis\Load target" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Avocado Data Analysis\Truncate target"
+          TopLeft="5.49999999999994,5.49999999999995" />
+        <NodeLayout
+          Size="131.2,41.6"
+          Id="Package\Avocado Data Analysis\Load target"
+          TopLeft="14.3,107.966666673554" />
+        <EdgeLayout
+          Id="Package\Avocado Data Analysis.PrecedenceConstraints[Constraint]"
+          TopLeft="79.9,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.8666666735542"
+              Start="0,0"
+              End="0,53.3666666735542">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.3666666735542" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Avocado Data Analysis\Data Profiling Task"
+          TopLeft="205.7,107.1" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="377.6,204"
+          Size="377.6,247.2"
+          Id="Package\Avocado Data Analysis"
+          TopLeft="5.50000000000003,5.50000000000003" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Avocado Data Analysis\Load target">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\Avocado Data Analysis\Load target\avocado_csv"
+          TopLeft="45.8333315120804,32.933333595064" />
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\Avocado Data Analysis\Load target\dbo_avocado"
+          TopLeft="54.9999978144965,147.333334504234" />
+        <EdgeLayout
+          Id="Package\Avocado Data Analysis\Load target.Paths[Flat File Source Output]"
+          TopLeft="115.43333151208,74.533333595064">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.96666630241606,72.8000009091696"
+              Start="0,0"
+              End="9.96666630241606,65.3000009091696">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.4000004545848" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.4000004545848"
+                    Point2="0,36.4000004545848"
+                    Point3="4,36.4000004545848" />
+                  <mssgle:LineSegment
+                    End="5.96666630241606,36.4000004545848" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.96666630241606,36.4000004545848"
+                    Point2="9.96666630241606,36.4000004545848"
+                    Point3="9.96666630241606,40.4000004545848" />
+                  <mssgle:LineSegment
+                    End="9.96666630241606,65.3000009091696" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-3.01666684879197,41.4000004545848,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Avocado Data Analysis\Load target\dbo_avocado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
